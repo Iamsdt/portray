@@ -17,7 +17,7 @@ PORTRAY_DEFAULTS = {
     "docs_dir": "docs",
     "extra_dirs": ["art", "images", "media"],
     "output_dir": "site",
-    "port": 8000,
+    "port": 8080,
     "host": "127.0.0.1",
     "append_directory_to_python_path": True,
     "include_reference_documentation": True,
@@ -31,7 +31,6 @@ MKDOCS_DEFAULTS: Dict[str, Any] = {
     "theme": {
         "name": "material",
         "palette": {"primary": "green", "accent": "lightgreen"},
-        "custom_dir": os.path.join(os.path.dirname(__file__), "mkdocs_templates"),
     },
     "markdown_extensions": [
         "admonition",
