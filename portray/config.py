@@ -31,6 +31,7 @@ MKDOCS_DEFAULTS: Dict[str, Any] = {
     "theme": {
         "name": "material",
         "palette": {"primary": "green", "accent": "lightgreen"},
+        "custom_dir": os.path.join(os.path.dirname(__file__), "mkdocs_templates"),
     },
     "markdown_extensions": [
         "admonition",
